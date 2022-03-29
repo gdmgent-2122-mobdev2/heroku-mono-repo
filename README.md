@@ -53,6 +53,6 @@ Voeg bij instellingen volgende Config Vars toe
 
 ### Deploy
 
-Deploy de app en kijk
+Deploy de app en kijk of het werkt
 
 ### Alternatief
