@@ -55,4 +55,28 @@ Voeg bij instellingen volgende Config Vars toe
 
 Deploy de app en kijk of het werkt
 
-### Alternatief
+### Alternatief 1
+
+Indien het niet lukt om de Github repository te koppelen, kan je dit ook manueel doen. Je zal dan echter ook altijd manueel moeten deployen.
+
+1. Download Heroku CLI
+   * https://devcenter.heroku.com/articles/heroku-cli#download-and-install
+2. Eénmalig inloggen 
+   * `heroku login`
+3. Binnen je projectfolder:
+   1. App toevoegen (APP_NAME is de naam van je app op Heroku)
+      * `heroku git:remote -a APP_NAME`
+   2. Hernoemen naar heroku-app
+      *  `git remote rename heroku heroku-app`
+   3. Api toevoegen (API_NAME is de naam van je app op Heroku)
+      * `heroku git:remote -a API_NAME`
+   4. Hernoemen naar heroku-api
+      *  `git remote rename heroku heroku-api`
+4. Elke keer je wil deployen (eerst add en commit):
+   * App deployen `git push heroku-app main`
+   * API deployen `git push heroku-api main`
+
+
+### Alternatief 2
+
+Je kan ook via Github Actions de Heroku CLI aanspreken. (Zelfstudie)
