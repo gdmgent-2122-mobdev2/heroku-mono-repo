@@ -6,6 +6,7 @@
   "engines": {
     "node": "16.x"
   },
+  "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
     "prod": "node index.js"
