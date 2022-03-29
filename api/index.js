@@ -1,7 +1,7 @@
 // import env file
 import 'dotenv/config';
+import express from 'express';
 
-const express = require('express');
 const app = express();
 // heroku port default 80
 const port = process.env.PORT || 80;
