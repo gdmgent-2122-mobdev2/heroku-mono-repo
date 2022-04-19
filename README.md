@@ -42,6 +42,7 @@ Voeg bij instellingen volgende Config Vars toe
   | PROCFILE | api/Procfile |
 
   **Vergeet ook je eigen variabelen niet (degene die je in `.env` had)**
+  Let op: het kan zijn dat je bij de Mongo connection string `&w=majority moet verwijderen
 
 - APP
 
