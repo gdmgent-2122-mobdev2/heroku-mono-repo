@@ -83,3 +83,14 @@ Indien het niet lukt om de Github repository te koppelen, kan je dit ook manueel
 ### Alternatief 2
 
 Je kan ook via Github Actions de Heroku CLI aanspreken. (Zelfstudie)
+
+
+## Veel voorkomende problemen
+
+* Ik kan niet pushen naar Heroku
+  * Zorg dat je de juiste branch pushed. Zit jij op master, doe dan bv. `git push heroku-app master`
+* Ik heb CORS errors in mijn app bij het aanspreken van de API
+  * Vaak is er een onderliggend probleem. Kijk naar de logs van je API, bv. MongoDB die niet goed staat?
+* Ik zie bij de API een error, maar geen duidelijke. 
+  * Herstart je applicatie (more -> Restart Dynos) en kijk dan naar de logs (more -> View logs). Nu zal de error wel duidelijk zijn
+
