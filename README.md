@@ -95,4 +95,6 @@ Je kan ook via Github Actions de Heroku CLI aanspreken. (Zelfstudie)
   * Vaak is er een onderliggend probleem. Kijk naar de logs van je API, bv. MongoDB die niet goed staat?
 * Ik zie bij de API een error, maar geen duidelijke. 
   * Herstart je applicatie (more -> Restart Dynos) en kijk dan naar de logs (more -> View logs). Nu zal de error wel duidelijk zijn
+* Ik krijg een 404 of 401 op een route van API
+  * Kijk of je geen dubbele / hebt bij het aanspreken van je api!, bv. https://api-....heroku.com//login. Dit wil zeggen dat in je .env variabele je de laatste "/" moet verwijderen bij het base path.
 
