@@ -79,7 +79,7 @@ Indien het niet lukt om de Github repository te koppelen, kan je dit ook manueel
    * API deployen `git push heroku-api main`
     * Vervang `main` met je branch indien je op een andere branch zit (bv. `master`)
 5. Indien je wil deployen zonder een wijziging aan je code, kan je een "lege" commit doen alvorens te pushen
-  * `git commit --allow-empty -m "Empty commit"`
+   * `git commit --allow-empty -m "Empty commit"`
 
 
 ### Alternatief 2
