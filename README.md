@@ -3,6 +3,7 @@
 ## Project klaarmaken
 
 - Zorg dat je een Procfile hebt in beide projecten (leeg bij app, ingevuld bij api)
+  - Indien je npm gebruikt (dus een package-lock file hebt) gebruik dan `npm  prod` in plaats van `yarn prod`   
 - Zorg bij je API eventueel dat je via package.json de Node versie meegeeft (`engines`)
 - Zorg bij de API dat je `process.env.PORT` als poort gebruikt zodat Heroku dit kan wijzigen
   - Opgelet: als voorbeeld staat de .env file op Git. Dit is uiteraard niet de bedoeling bij jouw project.
@@ -75,6 +76,7 @@ Indien het niet lukt om de Github repository te koppelen, kan je dit ook manueel
 4. Elke keer je wil deployen (eerst add en commit):
    * App deployen `git push heroku-app main`
    * API deployen `git push heroku-api main`
+    * Vervang `main` met je branch indien je op een andere branch zit (bv. `master`)
 
 
 ### Alternatief 2
